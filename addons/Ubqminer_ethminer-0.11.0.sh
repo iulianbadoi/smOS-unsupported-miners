@@ -8,4 +8,4 @@ whiptail --msgbox 'Replacing ethminer-v0.11.0 with Ubqminer.' --backtitle 'Ubqmi
 install_miner "ubiq/ubqminer" "9.1-linux" "ethminer-v0.11.0"
 ln -s --force ubqminer ethminer
 cd
-whiptail --msgbox 'Go to http://simplemining.net and setup a new rig group for ethminer-v0.11.0 that is now actually Ubqminer.  If you have 1080/1080ti You are going to want to enable Ethlargement for this one. --backtitle 'Ubqminer' --title 'Ubqminer' 15 55
+whiptail --msgbox 'Go to http://simplemining.net and setup a new rig group for ethminer-v0.11.0 that is now actually Ubqminer.  If you have 1080/1080ti You are going to want to enable Ethlargement for this one.' --backtitle 'Ubqminer' --title 'Ubqminer' 15 55
