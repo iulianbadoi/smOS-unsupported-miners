@@ -7,7 +7,7 @@ GITHUB_BIN_URL="$(curl -sSL https://api.github.com/repos/${GITHUB_REPO}/releases
     curl -sSL "$GITHUB_BIN_URL" | tar xvz --strip-components=1 -C /root/miner_org/${SM_MINER}/
 }
 install_miner "ubiq/ubqminer" "9.1-linux" "ethminer-v0.11.0"
-cd /root/miner_org/Replacing ${SM_MINER}
+cd /root/miner_org/${SM_MINER}
 ln -s --force ubqminer ethminer
 cd
 chown -R miner:miner /root/miner_org/${SM_MINER}
