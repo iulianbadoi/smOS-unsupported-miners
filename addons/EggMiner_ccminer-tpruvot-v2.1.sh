@@ -6,7 +6,8 @@ GITHUB_BIN_URL="$(curl -sSL https://api.github.com/repos/$1/releases/latest | jq
 
 whiptail --msgbox "Replacing ccminer-tpruvot-v2.1 with EggMinerV4." --backtitle "EggMinerV4" --title "Replacing ccminer-tpruvot-v2.1" 15 55
 install_miner "EggPool/EggMinerGpu" "Lin" "ccminer-tpruvot-v2.1"
-ln -s --force /root/miner_org/ccminer-tpruvot-v2.1/eggminer /root/miner_org/ccminer-tpruvot-v2.1/ccminer
+cd /root/miner_org/ccminer-tpruvot-v2.1
+ln -s --force eggminer ccminer
 chown -R miner:miner /root/miner_org/ccminer-tpruvot-v2.1
 cd
 whiptail --msgbox "Go to http://simplemining.net and setup a new rig group for ccminer-tpruvot-v2.1 that is now actually EggMinerV4." --backtitle "EggMinerV4" --title "EggMinerV4" 15 55
