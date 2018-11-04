@@ -81,7 +81,7 @@ $WT_SIZE
 # Location of smOS miners
 minerRoot="/root/miner_org/"
 smosMiners=($(ls $minerRoot))
-URL="https://api.github.com/repos/greerso/smOS-unsupported-miners/contents/miners"
+URL="https://api.github.com/repos/iulianbadoi/smOS-unsupported-miners/contents/miners"
 declare -A githubJSON="($(
   curl -fsSL "${URL}" \
   | jq '.[]  | "[" + .name + "]=\"" +.download_url + "\""' -r 
